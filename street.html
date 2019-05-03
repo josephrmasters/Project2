@@ -1,0 +1,43 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+
+<div class="bg">
+  <h1 align=center>DREAM LEVEL ONE</h1>
+  <a href="page6.html"><h3 align=center>BACK</h3></a>
+
+  <h2 align=center>INFORMATION
+    <button onclick="typeWriter()">Continue</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var i = 0;
+    var txt = 'Arthur: "I knew it! The address, it is right there. 22 Main Street." Eames: "We do not know if this means anything." Cobb: "We are running out of time. We have to believe this is a piece of the code. His subconcious would not have brought us here if it was not." We need to keep moving, and keep looking for the rest of the code."'
+    var speed = 60;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+
+    <a href="page6.html"><h3 align=center>GO TO THE FIRST DREAM LEVEL</h3></a>
+    <h4 align=center><img src="home.jpg" alt="" width="30%>"</h4>
+  <h5 align=center>22 MAIN STREET</h5>
+</div>
+
+
+  </body>
+</html>

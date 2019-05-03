@@ -1,0 +1,47 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+
+<div class="bg">
+  <h1 align=center>DREAM LEVEL ONE</h1>
+  <a href="page3.html"><h3 align=center>BACK</h3></a>
+
+  <h2 align=center>INFORMATION
+    <button onclick="typeWriter()">Continue</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var i = 0;
+    var txt = 'Arthur: "Where are we?" Cobb:"We are outside the city...it looks like a suburban area." Eames: "What do you think we will find here?" Cobb: "I do not know. Since we cannot create the dream world, we must explore what his subconcious has created. This place must be important to him. This looks like his childhood home. Eames: "Is that a school?" Cobb: "By the looks of it, yes. We should check out both."'
+    var speed = 60;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+
+
+
+    <h4 align=Center><img src="home.jpg" alt="" width="20%>"</h4>
+    <a href="page5.html"><h3 align=center>GO TO THE HOUSE</h3></a>
+
+    <h4 align=Center><img src="school5.png" alt="" width="20%>"</h4>
+    <a href="school.html"><h3 align=center>GO TO THE SCHOOL</h3></a>
+</div>
+
+
+  </body>
+</html>

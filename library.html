@@ -1,0 +1,43 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+
+<div class="bg">
+  <h1 align=center>DREAM LEVEL ONE</h1>
+  <a href="page2.html"><h3 align=center>BACK</h3></a>
+
+  <h2 align=center>INFORMATION
+    <button onclick="typeWriter()">Continue</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var i = 0;
+    var txt = 'Arthur: "Why is this dream level so dark?" Cobb: "His security has already been activated. All we are going to get is flashes of memory here. We will have to go deeper to find complete memories." Arthur:"What do you see?" Eames: "All I see is a skyline...I cannot tell which city it is though." Arthur: "Do you think it is one of the targets?" Cobbs: "No, more than likely it is a place of importance to him...his home maybe. We need to enter the city and find out why we are seeing this place specifically. Arthur: "What about that town in the distance, that could be important.';
+    var speed = 60;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+    <a href="page4.html"><h3 align=center>ENTER THE CITY</h3></a>
+    <a href="page6.html"><h3 align=center>ENTER THE SURROUNDING AREA</h3></a>
+    <h4 align=center><img src="skyline2.jpg" alt="" width="40%>"</h4>
+
+</div>
+
+
+  </body>
+</html>

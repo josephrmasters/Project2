@@ -1,0 +1,43 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page4.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+
+<div class="bg">
+  <h1 align=center>DREAM LEVEL TWO</h1>
+  <a href="page6.html"><h3 align=center>BACK</h3></a>
+
+  <h2 align=center>INFORMATION
+    <button onclick="typeWriter()">Continue</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var i = 0;
+    var txt = 'Arthur: "This is it, locker 37." Eames: "We need to get it open already." Cobb: "Wait, it is not what is inside the locker, it is the locker itself. Number 37. This is part of the code. But we also need to know what is inside." '
+    var speed = 60;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+
+    <a href="locker2.html"><h3 align=center>OPEN LOCKER</h3></a>
+    <h4 align=center><img src="locker.png" alt="" width="30%>"</h4>
+    <h5 align=center>LOCKER #37</h5>
+</div>
+
+
+  </body>
+</html>

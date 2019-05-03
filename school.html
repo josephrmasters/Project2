@@ -1,0 +1,43 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+
+<div class="bg">
+  <h1 align=center>DREAM LEVEL TWO</h1>
+  <a href="page6.html"><h3 align=center>BACK</h3></a>
+
+  <h2 align=center>INFORMATION
+    <button onclick="typeWriter()">Continue</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var i = 0;
+    var txt = 'Arthur: "Are we on the second dream level?" Cobb: "Yes, his dreams must connect with locations. This must be apart of his security. An architect would be useless here...I fear that we have little control over these dreams." Arthur: "I am seeing more than the previous level, but I am still only getting flashes." Eames: "Is this a school?" Cobb: "Yes, but there are no names attached." Arthur: That does not help us at all." Cobb: "Maybe not right now, but we need to get inside this school. It would not appear if it was not in his thoughts for a reason. Where would we revelant information here? This place is huge. Maybe...a locker. What are the numbers on these lockers? Arthur: "There are not any..." Cobb: "His mind does not remember the other numbers because they were not his...quick, go look for a locker that has a number on it. One of these has to." '
+    var speed = 60;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+
+    <a href="locker.html"><h3 align=center>FIND THE LOCKER</h3></a>
+    <h4 align=center><img src="school5.png" alt="" width="30%>"</h4>
+
+</div>
+
+
+  </body>
+</html>

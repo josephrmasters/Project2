@@ -1,0 +1,38 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page1.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+      <h1 align=center>THE PLAN</h1>
+
+      <h2 align=center>INFORMATION
+        <button onclick="typeWriter()">Continue</button>
+
+
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Cobb: "We will enter the first dream level to gain a better understanding of the man we are investigating. We must be extremely careful not to alert him that we are in his dream. Knowing that he is former CIA, we can only assume that he has recieved mental security, protecting against invasions of the dream like we plan to excecute. We only have a short amounnt of time before he will become aware of our presence and his security will be activated. We must spend as little time on each dream level as possible. On the first level, we will look for clues or weaknesses that will help us find the code on a deeper dream level."';
+var speed = 60;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<a href="page3.html"><h3 align=center>ENTER THE FIRST DREAM LEVEL</h3></a>
+<a href="page1.html"><h3 align=center>BACK</h3></a>
+
+  </body>
+</html>

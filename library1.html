@@ -1,0 +1,46 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+
+<div class="bg">
+  <h1 align=center>DREAM LEVEL TWO</h1>
+  <a href="page2.html"><h3 align=center>BACK</h3></a>
+
+  <h2 align=center>INFORMATION
+    <button onclick="typeWriter()">Continue</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var i = 0;
+    var txt = 'Arthur: "Why are we in a library." Cobb: "This must be related to the information we found in the locker in the school. We need to find the book it mentioned."'
+    var speed = 60;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+    <a href="book.html"><h3 align=center>FIND THE BOOK</h3></a>
+        <h4 align=center><img src="books.png" alt="" width="10%>"</h4>
+    <a href="page4.html"><h3 align=center>RETURN TO THE CITY</h3></a>
+
+
+    <h4 align=center><img src="skyline2.jpg" alt="" width="40%>"</h4>
+
+</div>
+
+
+  </body>
+</html>

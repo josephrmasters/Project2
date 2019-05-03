@@ -1,0 +1,45 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+
+<div class="bg">
+  <h1 align=center>DREAM LEVEL TWO</h1>
+  <a href="page2.html"><h3 align=center>BACK</h3></a>
+
+  <h2 align=center>INFORMATION
+    <button onclick="typeWriter()">Continue</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var i = 0;
+    var txt = '."'
+    var speed = 60;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+
+    <a href="library1.html"><h3 align=center>ENTER THE LIBRARY</h3></a>
+    <h4 align=center><img src="library.jpg" alt="" width="30%>"</h4>
+    <a href="subway2.html"><h3 align=center>ENTER THE SUBWAY STATION</h3></a>
+    <h4 align=center><img src="train.png" alt="" width="30%>"</h4>
+
+</div>
+
+
+  </body>
+</html>

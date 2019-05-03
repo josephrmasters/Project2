@@ -1,0 +1,41 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page1.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+    <div class="body">
+
+
+      <h1 align=center>THE OBJECTIVE</h1>
+
+      <h2 align=center>Background
+        <button onclick="typeWriter()">BEGIN</button>
+
+
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'In the past 48 hours, an unprecedented threat to the world has surfaced. Operatives from several international intelligence organizations have identified a terrorist organization with plans to attack three major cities across the globe. CIA agents have aprehended a man whom they believe to be feeding information to this organization from inside the CIA. Through various interrogations, we have learned that he holds the code for a killswitch connected to the hidden explosive devices at each location. Attempts to learn the code through interrogations have proved unsuccessful. With time running out, Cobb, Arthur, Eames, Ariadne, and yourself will enter his dream to either find the code or implant an idea that he is to reveal it. If you do not succeed, millions of lives will be lost.';
+var speed = 60;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<a href="page2.html"><h3 align=center>NEXT</h3></a>
+<a href="index.html"><h3 align=center>BACK</h3></a>
+  </div>
+  </body>
+</html>

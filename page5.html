@@ -1,0 +1,44 @@
+1<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>INCEPTION The Game</title>
+  </head>
+  <body>
+
+<div class="bg">
+  <h1 align=center>DREAM LEVEL TWO</h1>
+  <a href="page6.html"><h3 align=center>BACK</h3></a>
+
+  <h2 align=center>INFORMATION
+    <button onclick="typeWriter()">Continue</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var i = 0;
+    var txt = 'Arthur: "The house is completely emtpy...nothing. Is it supposed to be like this?" Cobb: "Maybe this is how his mind chooses to remember it. But maybe it is not an object that we are looking for. Remember what we are looking for: parts of a code. We are looking for numbers of significance." Eames: "but there is nothing here..." Cobb: "Right. So where would we find a nubmer in an empty house?" Arthur: "It is not the house...It is the street! The street address is made of numbers!"'
+    var speed = 60;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+
+    <a href="street.html"><h3 align=center>GO TO THE STREET</h3></a>
+    <h4 align=center><img src="home.jpg" alt="" width="30%>"</h4>
+  
+
+</div>
+
+
+  </body>
+</html>
